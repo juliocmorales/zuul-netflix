@@ -1,0 +1,48 @@
+#info:
+# component: Zuul-Server
+ 
+#Spring Application Name 
+#spring:
+# application:
+#  name: Zuul-Server 
+ 
+#Server Port
+#server:
+# port: 8765 
+
+
+ 
+#Zuul routes active  
+#zuul:
+#  routes:
+#    insertar-service:
+#      path: /insertar/**
+#      serviceId: insertar-service
+#    actualizar-service:
+#      path: /actualizar/**
+#      serviceId: actualizar-service
+#    eliminar-service:
+#      path: /eliminar/**
+#      serviceId: eliminar-service
+#    obtener-todos-service:
+#      path: /mostrar-todos
+#      url: http://localhost:8094/api/libros
+#    obtener-uno-service:
+#      path: /ouno/**
+#      serviceId: obtener-uno-service  
+#    ui:
+#      path: /ui
+#      url: http://localhost:8080
+#Ribbon Activation
+#ribbon:
+#  eureka:
+#   enabled: false
+#Eureka Instance ID
+#eureka:
+# instance:
+#  instanceId: ${spring.application.name}:${server.port} 
+
+
+
+
+
